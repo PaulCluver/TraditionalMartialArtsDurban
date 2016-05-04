@@ -2,70 +2,49 @@
 
     'use strict';
 
-    var muktiMovementApp = angular.module('muktiMovementApp', ['ui.router']);
+    var traditionalMartialArtsApp = angular.module('traditionalMartialArtsApp', ['ui.router']);
 
-    muktiMovementApp.constant('VERSION', '0.1');
+    traditionalMartialArtsApp.constant('VERSION', '0.1');
 
-    muktiMovementApp.config(function($stateProvider, $urlRouterProvider, $httpProvider, $locationProvider) {
+    traditionalMartialArtsApp.config(function($stateProvider, $urlRouterProvider, $httpProvider, $locationProvider) {
 
         $urlRouterProvider.otherwise('/home');
         $stateProvider
             .state('home', {
                 url: '/home',
-                templateUrl: 'partials/home/home.html',
-                data: {
-                    pageTitle : 'Bagua Kung Fu Durban - Home',
-                    description: 'Bagua Zhang Kung Fu in Durban South Africa'
-                }
+                templateUrl: 'partials/home/home.html'
             })
             .state('error', {
                 url: '/error',
-                templateUrl: 'partials/error/error.html',
-                data: {
-                    pageTitle : 'Bagua Kung Fu Durban - History',
-                    description: 'This page provides history on the martial art of Bagua Zhang Kung Fu.'
-                }
+                templateUrl: 'partials/error/error.html'
             })
-            .state('yoga', {
-                url: '/yoga',
-                templateUrl: 'partials/yoga/yoga.html',
-                data: {
-                    pageTitle : 'Bagua Kung Fu Durban - Theory',
-                    description: 'This page describes the theories contained within the martial art of Bagua Zhang Kung Fu.',
-                }
+             .state('BaguaKungFu', {
+                url: '/BaguaKungFu',
+                templateUrl: 'partials/bagua/bagua.html'
             })
-            .state('bagua', {
-                url: '/bagua',
-                templateUrl: 'partials/bagua/bagua.html',
-                data: {
-                    pageTitle : 'Bagua Kung Fu Durban - Method',
-                    description: 'This page provides nformation on the training methods of Durban Bagua Zhang Kung Fu.'
-                }
+            .state('XingYiKungFu', {
+                url: '/XingYiKungFu',
+                templateUrl: 'partials/xingyi/xingyi.html'
+            })
+            .state('TaiJiKungFu', {
+                url: '/TaiJiKungFu',
+                templateUrl: 'partials/taiji/taiji.html'
+            })
+            .state('MuayBoran', {
+                url: '/MuayBoran',
+                templateUrl: 'partials/muayboran/muayboran.html'
             })
             .state('classes', {
                 url: '/classes',
-                templateUrl: 'partials/classes/classes.html',
-                data: {
-                    pageTitle : 'Bagua Kung Fu Durban - Method',
-                    description: 'This page provides nformation on the training methods of Durban Bagua Zhang Kung Fu.'
-                }
+                templateUrl: 'partials/classes/classes.html'
             })
             .state('contact', {
                 url: '/contact',
-                templateUrl: 'partials/contact/contact.html',
-                data: {
-                    pageTitle : 'Bagua Kung Fu Durban - Method',
-                    description: 'This page provides nformation on the training methods of Durban Bagua Zhang Kung Fu.'
-                }
+                templateUrl: 'partials/contact/contact.html'
             });
-
-        // $locationProvider.html5Mode({
-        //   enabled: true,
-        //   requireBase: false
-        // });
     });
 
-    muktiMovementApp.controller('appCtrl', ['$scope', function($scope) {
+    traditionalMartialArtsApp.controller('appCtrl', ['$scope', function($scope) {
 
     }]);
 
