@@ -8011,7 +8011,7 @@ header .container {
 .top_bar ul.top_menu li a:link,
 .top_bar ul.top_menu li a:visited {
     color: #ffffff;
-    border-bottom: solid 1px #428bca;
+    border-bottom: solid 1px #000;
 }
 
 .top_bar ul.top_menu li a:hover,
@@ -8020,7 +8020,7 @@ header .container {
 }
 
 .navbar {
-    margin: 36px 0px;
+    margin: 0px 0px;
     background-color: transparent !important;
     border: none !important;
     background-color: transparent;
@@ -8036,15 +8036,15 @@ header .container {
     margin: 0px 0;
     padding: 0px;
     overflow: hidden;
-    width: 169px;
-    height: 152px;
+    width: 200px;
+    height: 113px;
 }
 
 .navbar a.navbar-brand img {
     float: left;
     margin: 0 6px 0 0;
-    width: 169px;
-    height: 152px;
+    width: 200px;
+    height: 113px;
 }
 
 .navbar a.navbar-brand span.logo_title {
@@ -8064,7 +8064,7 @@ header .container {
 }
 
 .navbar .nav {
-    margin: 75px 0 0 0;
+    margin: 0 0 0 0;
 }
 
 .navbar .nav li a {
@@ -8079,7 +8079,7 @@ header .container {
     background-color: transparent;
     -webkit-box-shadow: 0 0px 0px rgba(0, 0, 0, 0.067);
     box-shadow: 0 0px 0px rgba(0, 0, 0, 0.067);
-    border-bottom: solid 1px #428bca;
+    border-bottom: solid 1px #000;
     color: #333333;
 }
 
@@ -8146,6 +8146,24 @@ header .container {
     color: #fff;
     text-shadow: 0px 0px 0 transparent;
     border-bottom: solid 0px #428bca;
+}
+
+#link_wrapper {
+    background: #D61832;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    right: 15px;
+    z-index: 101;
+    overflow: hidden;
+    padding: 10px;
+}
+
+#link_wrapper a {
+    color: #fff;
+    
 }
 
 #social_media_wrapper {
@@ -8253,7 +8271,7 @@ header .container {
 
 .flexslider .container .carousel-caption h1.skincolored {
     background: #428bca;
-    background-color: rgba(66, 139, 202, 0.6);
+    background-color: rgba(204, 204, 204, 0.6);
 }
 
 .flexslider .container .carousel-caption .lead {
@@ -8271,7 +8289,7 @@ header .container {
 
 .flexslider .container .carousel-caption .lead.skincolored {
     background: #428bca;
-    background-color: rgba(66, 139, 202, 0.8);
+    background-color: rgba(204, 204, 204, 0.6);
 }
 
 .flexslider .container .carousel-caption .btn {
@@ -8368,7 +8386,7 @@ header .container {
 
 .full_page_photo section.call_to_action h3.skincolored {
     background: #428bca;
-    background-color: rgba(66, 139, 202, 0.6);
+    background-color: rgba(204, 204, 204, 0.6);
 }
 
 .full_page_photo section.call_to_action h4 {
@@ -8385,7 +8403,7 @@ header .container {
 
 .full_page_photo section.call_to_action h4.skincolored {
     background: #428bca;
-    background-color: rgba(66, 139, 202, 0.6);
+    background-color: rgba(204, 204, 204, 0.6);
 }
 
 .full_page_photo #map {
@@ -8546,7 +8564,7 @@ section.features_teasers_wrapper .feature_teaser h3 {
     margin: 0 0 16px 0;
     font-weight: 300;
     border-bottom: solid 1px #cccccc;
-    color: #428bca;
+    color: #333333;
 }
 
 .section_header.skincolored small {
@@ -9728,7 +9746,7 @@ footer a {
 
 footer a:hover,
 footer a:active {
-    color: #2a6496;
+    color: #D61832;
     text-decoration: none;
 }
 
