@@ -30,9 +30,9 @@
                 url: '/TaiJiKungFu',
                 templateUrl: 'partials/taiji/taiji.html'
             })
-            .state('MuayBoran', {
-                url: '/MuayBoran',                
-                templateUrl: 'partials/muayboran/muayboran.html'
+            .state('MuayThai', {
+                url: '/MuayThai',                
+                templateUrl: 'partials/muaythai/muaythai.html'
             })
             .state('classes', {
                 url: '/classes',
