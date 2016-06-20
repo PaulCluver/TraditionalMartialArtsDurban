@@ -1,7 +1,5 @@
 var gulp = require('gulp'),
-    connect = require('gulp-connect'),
-    karma = require('karma').server,
-    protractor = require("gulp-protractor").protractor;
+    connect = require('gulp-connect');
 
 
 gulp.task('connect', function () {

@@ -10196,6 +10196,9 @@ blockquote p {
 -------------------------------------------------------------- */
 
 @media only screen and (max-width: 767px) {
+    #unseen table td:nth-child(1), 
+    #unseen table th:nth-child(1) {display: none;}
+
     body {
         margin: 0;
         padding: 0;
@@ -10473,3 +10476,4 @@ blockquote p {
         display: none;
     }
 }
+
