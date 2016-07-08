@@ -5,47 +5,63 @@
     </div>
 </section>
 <section class="article-text">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12 col-md-12">
-        <p>
-          Yin Style Baguazhang is an art of striking while moving. It is a combative art with precise theoretical and technical qualities. The fighting theory and usage, outward appearance, and internal development methods all originate from and accord with a classic of ancient Chinese philosophy known as the Book of Changes. It is this philosophy which gives us the rules of the circle and square. In Yin Stlye Bagua, we turn round and strike square. In accord with the symbolism and meaning of the eight trigrams in the Book of Changes, Yin Style Bagua has eight distinct systems within the art. Each of these systems, represented by a trigram and particular animal, stands on its own as a complete martial art with unique developmental and fighting methods.
-        </p>
-        <blockquote>
-          <p>
-            Yin Style Bagua emphasizes developing the mind and body together - it is equal parts mental and physical. Training this art will make you stronger, healthier, and a more skilled fighter.
-          </p>
-          <small>He Jinbao</small>
-        </blockquote>
-        <p>
-        This martial art creates a tremendously strong yet supple body that possesses an infinite variety of changes in movement, energy and angle. By the awareness generated through the practice of this unique Kung Fu, one learns to comprehend the universal constant of change.
-        </p>
-        <table class="table table-striped">
-        <thead>
-          <tr>
-              <th width="50%">What does the martial art entail?</th>
-              <th width="50%">What are the benefits of this martial art?</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-              <td>Standing and moving Qigong exercises.</td>
-              <td>An improved sense of balance and enhanced peripheral awareness.</td>
-          </tr>
-          <tr>
-              <td>Circle Walking moving meditation.</td>
-              <td>The ability to quickly change both direction and energy.</td>
-          </tr>
-          <tr>
-              <td>Animal forms and striking patterns.</td>
-              <td>Improved self defence and an understanding of how angles, fulcrums and energy changes affect movement and combat.</td>
-          </tr>
-          <tr>
-              <td>Bagua weapons training</td>
-              <td>The ability to go with the flow and adapt to changing conditions and environments</td>
-          </tr>
-        </tbody>
-        </table>
-      </div>
-  </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-12">
+                <p>
+                    Yin Style Baguazhang is an art of striking while moving. It is a combative art with precise theoretical and technical qualities. The fighting theory and usage, outward appearance, and internal development methods all originate from and accord with a classic of ancient Chinese philosophy known as the Book of Changes. It is this philosophy which gives us the rules of the circle and square. In Yin Stlye Bagua, we turn round and strike square. In accord with the symbolism and meaning of the eight trigrams in the Book of Changes, Yin Style Bagua has eight distinct systems within the art. Each of these systems, represented by a trigram and particular animal, stands on its own as a complete martial art with unique developmental and fighting methods.
+                </p>
+                <blockquote>
+                    <p>
+                        Yin Style Bagua emphasizes developing the mind and body together - it is equal parts mental and physical. Training this art will make you stronger, healthier, and a more skilled fighter.
+                    </p>
+                    <small>He Jinbao</small>
+                </blockquote>
+                <p>
+                    This martial art creates a tremendously strong yet supple body that possesses an infinite variety of changes in movement, energy and angle. By the awareness generated through the practice of this unique Kung Fu, one learns to comprehend the universal constant of change.
+                </p>
+                <p>
+                    As a combative art, Yin Style Bagua Zhang uses intricate kicking, throwing and seizing techniques set up by strikes executed as the practitioner moves around the opponent in a circular fashion. The system includes comprehensive training methods to gain power, agility and skill. You will learn to move and strike with power!
+                </p>
+                <p>
+                    The basic solo training in Ba Gua Zhang Kung Fu is designed to teach the practitioner how to control his or her momentum and timing in order to generate power with the entire body mass being used as a coherent unit. This whole body power enables the practitioner to issue force from any part of the body with the support of all other parts. Each part of the body coordinates with every other, generating the maximum amount of power available relative to the individual's size and weight. Whole body power is applied in all categories of Ba Gua Zhang techniques which include striking, kicking, grappling and throwing.
+                </p>
+                <p>
+                    Yin style Bagua Zhang is composed of 8 animal systems. Details of these systems are briefly provided below.
+                </p>
+                <div class="col-sm-12 col-md-12" style="padding:5px">
+                    <div class="col-sm-12 col-md-12" style="background-color:#999; color:#fff">
+                        <p>
+                            <h4>The 8 Animal Systems of Yin style Bagua Zhang</h4>
+                        </p>
+                    </div>
+                    <div class="col-sm-1 col-md-1" style="background-color:#ccc;">
+                        <h5><strong>Animal</strong></h4>
+                    </div>
+                    <div class="col-sm-1 col-md-1" style="background-color:#ccc;">
+                        <h5><strong>Nature</strong></h4>
+                    </div>
+                    <div class="col-sm-8 col-md-8" style="background-color:#ccc;">
+                        <h5><strong>Description</strong></h4>
+                    </div>
+                    <div class="col-sm-2 col-md-2" style="background-color:#ccc;">
+                        <h5><strong>Image</strong></h5>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12" ng-repeat="animal in animals" style="padding:5px">
+                    <div class="col-sm-1 col-md-1">
+                        {{animal.animal}}
+                    </div>
+                    <div class="col-sm-1 col-md-1">
+                        {{animal.naturalImage}}
+                    </div>
+                    <div class="col-sm-8 col-md-8">
+                        {{animal.description}}
+                    </div>
+                    <div class="col-sm-2 col-md-2">
+                        <img src="{{animal.imgSrc}}" border="0" alt="{{animal.animal}}">
+                    </div>
+                </div>
+            </div>
+        </div>
 </section>

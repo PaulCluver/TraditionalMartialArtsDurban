@@ -1,24 +1,90 @@
 <section class="hgroup">
     <div class="container">
-        <h1>What is Practical Muay Thai Self Defence?</h1>
-        <h2>Practical Muay Thai Self Defence is not a sport. The aim of this fighting method is to train the practitioner to use the entire body as an attacking surface.</h2>
+        <h1>What is Muay Thai Boran?</h1>
+        <h2>Developed on the battlefields of ancient Siam, Muay Thai Boran is a an umbrella term for a group of traditional Thai martial arts which seeks to train the practitioner to use his or her entire body as an attacking surface.</h2>
     </div>
 </section>
 <section class="article-text">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12 col-md-12">
-        <p>
-          It is a practical fighting system which includes fundamental striking methods for all of the natural weapons of the body. These weapons are subsequently drilled in all of the primary vectors of movement, namely forwards and backwards, upwards and downwards, side to side.
-        </p>
-        <blockquote>
-          <p>
-            Employing devastating striking, bone breaking joint locks and throws, this practical method of self defence is fast, efficient, resolute and deadly.
-          </p>
-        </blockquote>
-        <p>
-            In addition to the offensive and defensive techniques of Practical Muay Thai Self Defence, specific stepping drills are practiced which include the Standing Step, One Step, Two Step and Three Step methods. The key advantage of training these varied stepping methods is the development of speed, balance and precision when advancing, retreating or turning the back.
-        </p>
-      </div>
-  </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-12">
+                <p>
+                    When the ancient Thai warrior lost his weapons on the battlefield, he would resort to Muay Thai Boran to protect himself. In doing this, fundamental striking methods for the fist, open palm, forearm, elbow, shoulder, foot, shin, knee and hip are taught.
+                </p>
+                <blockquote>
+                    <p>
+                        Employing devastating striking, bone breaking joint locks and throws, this practical martial art is fast, efficient, resolute and deadly.
+                    </p>
+                </blockquote>
+                <p>
+                    Alongside a plethora of training drills, Muay Thai Boran is primarilly divided into 15 major and 15 minor techniques. These are known as Mae Mai and Luk Mai respectively and are as follows:
+                </p>
+                <div class="col-sm-12 col-md-12" style="padding:5px">
+                    <div class="col-sm-12 col-md-12" style="background-color:#999; color:#fff">
+                        <p>
+                            <h4>Mae Mai (Primary Techniques)</h4>
+                        </p>
+                    </div>
+                    <div class="col-sm-1 col-md-2" style="background-color:#ccc;">
+                        <h5><strong>Thai Name</strong></h5>
+                    </div>
+                    <div class="col-sm-1 col-md-2" style="background-color:#ccc;">
+                        <h5><strong>English Name</strong></h5>
+                    </div>
+                    <div class="col-sm-8 col-md-6" style="background-color:#ccc;">
+                        <h5><strong>Description</strong></h5>
+                    </div>
+                    <div class="col-sm-1 col-md-2" style="background-color:#ccc;">
+                        <h5><strong>Image</strong></h5>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12" ng-repeat="technique in techniquesMaeMai" style="padding:5px">
+                    <div class="col-sm-2 col-md-2">
+                        {{technique.thaiName}}
+                    </div>
+                    <div class="col-sm-2 col-md-2">
+                        {{technique.englishName}}
+                    </div>
+                    <div class="col-sm-6 col-md-6">
+                        {{technique.description}}
+                    </div>
+                    <div class="col-sm-2 col-md-2">
+                        <img src="{{technique.imgSrc}}" border="0" alt="{{technique.englishName}}">
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12" style="padding:5px">
+                        <div class="col-sm-12 col-md-12" style="background-color:#999; color:#fff">
+                            <p>
+                                <h4>Luk Mai (Secondary Techniques)</h4>
+                            </p>
+                        </div>
+                        <div class="col-sm-1 col-md-2" style="background-color:#ccc;"">
+                            <h5><strong>Thai Name</strong></h5>
+                        </div>
+                        <div class="col-sm-1 col-md-2" style="background-color:#ccc;">
+                             <h5><strong>English Name</strong></h5>
+                        </div>
+                        <div class="col-sm-8 col-md-6" style="background-color:#ccc;">
+                             <h5><strong>Description</strong></h5>
+                        </div>
+                        <div class="col-sm-1 col-md-2" style="background-color:#ccc;">
+                             <h5><strong>Image</strong></h5>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-12" ng-repeat="technique in techniquesLukMai" style="padding:5px">
+                        <div class="col-sm-2 col-md-2">
+                            {{technique.thaiName}}
+                        </div>
+                        <div class="col-sm-2 col-md-2">
+                            {{technique.englishName}}
+                        </div>
+                        <div class="col-sm-6 col-md-6">
+                            {{technique.description}}
+                        </div>
+                        <div class="col-sm-2 col-md-2">
+                            <img src="{{technique.imgSrc}}" border="0" alt="{{technique.englishName}}">
+                        </div>
+                    </div>
+            </div>
+        </div>
 </section>
